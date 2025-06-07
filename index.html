@@ -1,205 +1,137 @@
-
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>نضال | السيرة الذاتية</title>
+  <meta name="description" content="السيرة الذاتية لنضال قنبر - مطور ومبدع من عفرين، كردستان. اكتشف أعماله الفنية والبرمجية وتواصل معه.">
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleTheme() {
+      document.documentElement.classList.toggle('dark');
+    }
+    function toggleLanguage() {
+      const current = window.location.href;
+      const newURL = current.includes('de.html') ? current.replace('de.html', 'index.html') : 'de.html';
+      window.location.href = newURL;
+    }
+  </script>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background: linear-gradient(to bottom, #141e30, #243b55);
-      color: white;
-      padding: 2rem;
-    }
-    header {
-      text-align: center;
-      padding: 1rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #00ffff;
-    }
-    section {
-      background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 1rem;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 0 20px rgba(0,255,255,0.2);
-    }
-    h2 {
-      color: #00ffff;
-      margin-bottom: 1rem;
-    }
-    ul, p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
-    .icon {
-      font-size: 2rem;
-      margin-right: 0.5rem;
-    }
-    .contact a {
-      color: #00ffff;
-      display: block;
-      margin: 0.3rem 0;
-      text-decoration: none;
-    }
-    .footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-      margin-top: 3rem;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 0.75rem;
-      box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-    }
-    .album {
-      margin-bottom: 2rem;
-    }
-    .album-title {
-      font-size: 1.3rem;
-      color: #00e0e0;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid #00e0e0;
-      padding-bottom: 0.5rem;
+    .dark body {
+      background: linear-gradient(to bottom, #f3f4f6, #bfdbfe);
+      color: #1f2937;
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>🧾 السيرة الذاتية - نضال</h1>
+<body class="bg-gradient-to-b from-gray-900 to-blue-900 text-white font-[Cairo] p-6 transition-all duration-300">
+  <div class="flex justify-end mb-4 gap-2">
+    <button onclick="toggleLanguage()" class="bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-1 rounded-full text-sm">🌐 تغيير اللغة</button>
+    <button onclick="toggleTheme()" class="bg-gray-700 hover:bg-gray-800 text-white px-4 py-1 rounded-full text-sm">🌓 تغيير الألوان</button>
+  </div>
+
+  <header class="text-center mb-10">
+    <img src="https://i.postimg.cc/rFSxc31M/1446-12-12-01-16-03-ec4e4796.jpg" alt="الصورة الشخصية" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg">
+    <h1 class="text-4xl font-bold text-cyan-400">🧾 السيرة الذاتية</h1>
+    <p class="text-gray-300 mt-2">مطور ومبدع من عفرين، كردستان</p>
   </header>
 
-  <section>
-    <h2>📌 المعلومات الشخصية</h2>
-    <ul>
+  <nav class="bg-cyan-800 bg-opacity-20 rounded-xl p-4 text-center mb-10">
+    <a href="#about" class="mx-4 text-cyan-300 hover:underline">نبذة عني</a>
+    <a href="#skills" class="mx-4 text-cyan-300 hover:underline">الهوايات</a>
+    <a href="#projects" class="mx-4 text-cyan-300 hover:underline">الأعمال</a>
+    <a href="#contact" class="mx-4 text-cyan-300 hover:underline">تواصل</a>
+  </nav>
+
+  <section id="about" class="bg-white bg-opacity-10 rounded-2xl p-6 mb-6 shadow-lg">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4">📌 المعلومات الشخصية</h2>
+    <ul class="space-y-2">
       <li><strong>الاسم:</strong> نضال</li>
-      <li><strong>الاسم العالة:</strong> قنبر</li>
+      <li><strong>الكنية:</strong> قنبر</li>
       <li><strong>تاريخ الميلاد:</strong> 01 يناير 2002</li>
-      <li><strong>الجنسية:</strong> كردستان</li>
-      <li><strong>مكان الميلاد :</strong> روجافا عفرين</li>
-      <li><strong>مكان الإقامة:</strong> ألمانيا (منذ 2023)</li>
-      <li><strong>اللغات:</strong>
-        <ul>
-          <li>الكردية (اللغة الأم)</li>
-          <li>العربية</li>
-          <li>التركية</li>
-          <li>الألمانية</li>
-        </ul>
-      </li>
+      <li><strong>الجنسية:</strong> كردي</li>
+      <li><strong>مكان الولادة:</strong> روجافا - عفرين</li>
+      <li><strong>الإقامة الحالية:</strong> ألمانيا (منذ عام 2023)</li>
+      <li><strong>اللغات:</strong> الكردية (اللغة الأم)، العربية، التركية، الألمانية</li>
     </ul>
   </section>
 
-  <section>
-    <h2>🎯 نبذة شخصية</h2>
-    <p>أنا نضال، شاب طموح من عفرين، أمتلك شغفًا كبيرًا بالفن والتكنولوجيا. أهوى الرسم والبرمجة وأسعى لتطوير مهاراتي في هذه المجالات بشكل مستمر. أؤمن أن الإبداع والتعلم المستمر هما مفتاح التقدم الشخصي والمهني. انتقلت إلى ألمانيا في عام 2023 بعد أن عشت فترة في تركيا، وأطمح لبناء مستقبل مهني في مجال التكنولوجيا.</p>
+  <section class="bg-white bg-opacity-10 rounded-2xl p-6 mb-6 shadow-lg">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4">🎯 من أنا؟</h2>
+    <p>أنا نضال، شاب طموح من مدينة عفرين، أمتلك شغفًا بالفن والتكنولوجيا. أحب الرسم والبرمجة وأسعى دائمًا لتطوير نفسي وبناء مستقبل مهني في مجالات التقنية والإبداع.</p>
+    <p>الإبداع لا حدود له، وكل فكرة جديدة هي خطوة نحو المستقبل.</p>
   </section>
 
-  <section>
-    <h2>🎨 الهوايات والاهتمامات</h2>
-    <ul>
+  <section id="skills" class="bg-white bg-opacity-10 rounded-2xl p-6 mb-6 shadow-lg">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4">🎨 الهوايات والاهتمامات</h2>
+    <ul class="list-disc list-inside space-y-1">
       <li>الرسم</li>
-      <li>البرمجة</li>
-      <li>الرياضة</li>
-      <li>القراءة الكتب</li>
-      <li>تعلم مهارات جديدة</li>
+      <li>تطوير المواقع والبرمجة</li>
+      <li>ممارسة الرياضة</li>
+      <li>قراءة الكتب</li>
+      <li>تعلّم المهارات الجديدة عبر الإنترنت</li>
     </ul>
   </section>
 
-  <section>
-    <h2>🌐 معلومات إضافية</h2>
-    <ul>
-      <li>هذا أول موقع إلكتروني أبدأ فيه عرض أعمالي ومهاراتي.</li>
-      <li>أهدف إلى تحسين مستواي في البرمجة من خلال التعلم الذاتي والمشاريع العملية.</li>
-      <li>أعمل حاليًا على تطوير نفسي لغويًا ومهنيًا في بيئة جديدة (ألمانيا).</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>📁 ملف الأعمال</h2>
-
-    </div>
-    <div class="album">
-      <div class="album-title">💻 مشاريع برمجية عن قريب</div>
-      <div class="gallery">
-<link href="path/to/lightbox.css" rel="stylesheet" />
-<script src="path/to/lightbox.js"></script>
-
-<a href="image1.jpg" data-lightbox="gallery"><img src="thumb1.jpg" alt="عن قريب 1"></a>
-<a href="image2.jpg" data-lightbox="gallery"><img src="thumb2.jpg" alt="عن قريب 2"></a>
-
-      </div>
-    </div>
+  <section id="projects" class="bg-white bg-opacity-10 rounded-2xl p-6 mb-6 shadow-lg">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4">📁 معرض المشاريع</h2>
+    <div class="space-y-4">
+      <details class="bg-cyan-800 bg-opacity-10 rounded-lg p-4">
+        <summary class="cursor-pointer text-cyan-300 font-semibold">💻 مشاريع برمجية</summary>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+          <img src="thumb1.jpg" alt="مشروع برمجي 1" class="rounded-lg shadow">
+          <img src="https://nidalkanbar.github.io/-buke/" alt="مشروع برمجي 2" class="rounded-lg shadow">
         </div>
-    <div class="album">
-      <div class="album-title">💻 مشاريع الرسم عن قريب
-      </div>
-      <div class="gallery">
-<link href="path/to/lightbox.css" rel="stylesheet" />
-<script src="path/to/lightbox.js"></script>
+      </details>
 
-<a href="image2.jpg" data-lightbox="gallery"><img src="thumb1.jpg" alt="عن قريب"></a>
-<a href="image2.jpg" data-lightbox="gallery"><img src="thumb1.jpg" alt="عن قريب"></a>
+      <details class="bg-cyan-800 bg-opacity-10 rounded-lg p-4">
+        <summary class="cursor-pointer text-cyan-300 font-semibold">🎨 أعمال فنية</summary>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+          <!-- تم حذف الصور المكررة وتصحيح alt -->
+          <img src="https://i.postimg.cc/pd71ZVHv/IMG-20250608-WA0012.jpg" alt="رسم فني 1" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/bJ581f6S/IMG-20250608-WA0013.jpg" alt="رسم فني 2" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/Vk7b2dvx/IMG-20250608-WA0015.jpg" alt="رسم فني 3" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/XvS0jgrd/IMG-20250608-WA0018.jpg" alt="رسم فني 4" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/053X1yMJ/IMG-20250608-WA0014.jpg" alt="رسم فني 5" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/MHPm5tCL/IMG-20250608-WA0017.jpg" alt="رسم فني 6" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/02ZQNjmc/IMG-20250608-WA0002.jpg" alt="رسم فني 7" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/G3XtL9vz/IMG-20250608-WA0004.jpg" alt="رسم فني 8" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/T1bW56VC/IMG-20250608-WA0003.jpg" alt="رسم فني 9" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/g2X1wtQr/IMG-20250608-WA0001.jpg" alt="رسم فني 10" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/90DYxKG7/IMG-20250608-WA0007.jpg" alt="رسم فني 11" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/y8ypSqn1/IMG-20250608-WA0008.jpg" alt="رسم فني 12" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/26y0J2vn/IMG-20250608-WA0009.jpg" alt="رسم فني 13" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/pL1CjK3T/IMG-20250608-WA0010.jpg" alt="رسم فني 14" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/W3ShDwfY/IMG-20250608-WA0011.jpg" alt="رسم فني 15" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/t4HpjVBs/IMG-20250608-WA0020.jpg" alt="رسم فني 16" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/2jhCXwxs/IMG-20250608-WA0021.jpg" alt="رسم فني 17" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/QdyLM9bg/IMG-20250608-WA0022.jpg" alt="رسم فني 18" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/ZqS8pjVJ/IMG-20250608-WA0024.jpg" alt="رسم فني 19" class="rounded-lg shadow">
+        </div>
+      </details>
 
-      </div>
-    </div>
-       </div>
-    <div class="album">
-      <div class="album-title">💻 مشاريع العمل عن قريب
-      </div>
-      <div class="gallery">
-<link href="path/to/lightbox.css" rel="stylesheet" />
-<script src="path/to/lightbox.js"></script>
-
-<a href="image2.jpg" data-lightbox="gallery"><img src="thumb1.jpg" alt="عن قريب"></a>
-<a href="image2.jpg" data-lightbox="gallery"><img src="thumb1.jpg" alt="عن قريب"></a>
-
-      </div>
-          <div class="album">
-      <div class="album-title">💻 مشاريع متنوع عن قريب
-      </div>
-      <div class="gallery">
-<link href="path/to/lightbox.css" rel="stylesheet" />
-<script src="path/to/lightbox.js"></script>
-
-<a href="image2.jpg" data-lightbox="gallery"><img src="thumb1.jpg" alt="عن قريب"></a>
-<a href="image2.jpg" data-lightbox="gallery"><img src="thumb1.jpg" alt="عن قريب"></a>
-
-      </div>
-    </div>
+      <details class="bg-cyan-800 bg-opacity-10 rounded-lg p-4">
+        <summary class="cursor-pointer text-cyan-300 font-semibold">📂 مشاريع عامة</summary>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+          <img src="https://i.postimg.cc/13RNX9w9/1.png" alt="مشروع عام 1" class="rounded-lg shadow">
+          <img src="https://i.postimg.cc/N00ZfrdQ/2.png" alt="مشروع عام 2" class="rounded-lg shadow">
+        </div>
+      </details>
     </div>
   </section>
 
-  <section>
-    <h2>📱 تواصل معي</h2>
-    <ul style="list-style: none; padding: 0;">
-      <li style="margin-bottom: 1rem; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <a href="https://www.facebook.com/share/1HhqQdig74/" target="_blank" style="text-decoration: none; color: #00acee; font-size: 1.2rem; display: flex; align-items: center;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Facebook-icon-1.png" alt="Facebook" style="width: 28px; height: 28px; margin-left: 10px;"> فيسبوك
-        </a>
-      </li>
-      <li style="margin-bottom: 1rem; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-        <a href="https://www.instagram.com/nidal_kanbar24/profilecard/?igsh=NncxMjAzaXFlZXNs" target="_blank" style="text-decoration: none; color: #C13584; font-size: 1.2rem; display: flex; align-items: center;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 28px; height: 28px; margin-left: 10px;"> إنستغرام
-        </a> 
-      </li>
-      <li style="">📱
-        <img src="" alt=""> 
-        <a href="tel:+4914211764758" style="color: #00ffff; text-decoration: none;">رقم الهاتف: +4914211764758</a>
-      </li>
-    </ul> 
-    <a href="mailto:nidalkanber20@gmail.com">اضغط للكتابة عبر البريد📬</a>📬
-<link href="path/to/lightbox.css" rel="stylesheet" />
- 
+  <section id="contact" class="bg-white bg-opacity-10 rounded-2xl p-6 shadow-lg">
+    <h2 class="text-2xl font-bold text-cyan-400 mb-4">📱 تواصل معي</h2>
+    <ul class="space-y-2">
+      <li><a href="https://www.facebook.com/share/1HhqQdig74/" target="_blank" class="text-blue-400 hover:underline">📘 فيسبوك</a></li>
+      <li><a href="https://www.instagram.com/nidal_kanbar24/" target="_blank" class="text-pink-400 hover:underline">📸 إنستغرام</a></li>
+      <li>📞 <a href="tel:+4914211764758" class="text-cyan-300 hover:underline">+49 142 11764758</a></li>
+      <li>📧 <a href="mailto:nidalkanber20@gmail.com" class="text-cyan-300 hover:underline">nidalkanber20@gmail.com</a></li>
+    </ul>
+  </section>
+
+  <footer class="text-center text-sm text-gray-400 mt-10">
+    © 2025 نضال قنبر - جميع الحقوق محفوظة.
+  </footer>
+</body>
+</html>
